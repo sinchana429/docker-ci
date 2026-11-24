@@ -21,8 +21,6 @@ pipeline {
         }
 
         stage('3. Build & Tag Docker Image') {
-            steps {
-                bat stage('3. Build & Tag Docker Image') {
     steps {
         bat '"C:/Program Files/Docker/Docker/resources/bin/docker.exe" build -t localhost:5000/anil-demo-app:%BUILD_NUMBER% -t localhost:5000/anil-demo-app:latest .'
             }
