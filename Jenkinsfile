@@ -18,7 +18,7 @@ pipeline {
                 bat '"C:/Users/STUDENT/AppData/Local/Programs/Python/Python313/python.exe" -m py_compile app.py'
 
             }
-        
+        }
 
         stage('3. Build & Tag Docker Image') {
             steps {
